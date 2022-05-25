@@ -6,3 +6,13 @@ main {
   padding: 0;
   margin: 0;
 }
+
+// FIXME: cant access mobile mixin inside layout folder
+// @include mobile {
+//   main {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }

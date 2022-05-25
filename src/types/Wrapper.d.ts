@@ -1,0 +1,3 @@
+interface IWrapper {
+  children: ReactElement;
+}

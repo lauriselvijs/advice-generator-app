@@ -1,1 +1,5 @@
-@import "./dark-theme";
+@import "./light-theme";
+
+:export {
+  lightTheme: light-theme;
+}

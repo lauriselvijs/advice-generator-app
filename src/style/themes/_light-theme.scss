@@ -1,0 +1,22 @@
+.light-theme {
+  --primary-base-color: var(
+    --imported-light-theme-primary-base-color,
+    #{invert($default-primary-base-color)}
+  );
+  --primary-light-color: var(
+    --imported-light-theme-primary-light-color,
+    #{invert($default-primary-light-color)}
+  );
+  --secondary-base-color: var(
+    --imported-light-theme-secondary-base-color,
+    #{invert($default-secondary-base-color)}
+  );
+  --secondary-light-color: var(
+    --imported-light-theme-secondary-light-color,
+    #{invert($default-secondary-light-color)}
+  );
+  --secondary-dark-color: var(
+    --imported-light-theme-secondary-dark-color,
+    #{invert($default-secondary-dark-color)}
+  );
+}

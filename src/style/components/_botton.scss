@@ -1,0 +1,16 @@
+button {
+  background-color: var(--primary-base-color);
+  color: var(--secondary-base-color);
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
