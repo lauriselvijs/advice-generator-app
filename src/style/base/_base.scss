@@ -26,7 +26,14 @@
   --font-family: var(--imported-font-family, #{$font-family});
   --font-weight: var(--imported-font-weigh, #{$font-weight});
 
-  --font-size: var(--imported-font-size, #{$font-size});
+  --font-size-large: var(--imported-font-size-large, #{$font-size-large});
+  --font-size-medium: var(--imported-font-size-medium, #{$font-size-medium});
+  --font-size-small: var(--imported-font-size-small, #{$font-size-small});
+
+  --footer-primary-color: var(
+    --imported-footer-primary-color,
+    #{$footer-primary-color}
+  );
 }
 
 body {
@@ -35,9 +42,9 @@ body {
 
   font-family: var(--font-family);
   font-weight: var(--font-weight);
-  font-size: var(--font-size);
+  font-size: var(--font-size-large);
 
   color: var(--primary-light-color);
 
-  background-color: var(--secondary-base-color);
+  background-color: var(--secondary-dark-color);
 }

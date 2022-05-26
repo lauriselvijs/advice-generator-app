@@ -1,0 +1,19 @@
+@import "../../style/main.scss";
+
+img.pattern-divider-desktop {
+  display: inline-block;
+}
+
+img.pattern-divider-mobile {
+  display: none;
+}
+
+@include mobile {
+  img.pattern-divider-desktop {
+    display: none;
+  }
+
+  img.pattern-divider-mobile {
+    display: inline-block;
+  }
+}

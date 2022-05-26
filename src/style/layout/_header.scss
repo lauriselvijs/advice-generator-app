@@ -2,11 +2,11 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 20px;
 }
 
-// BUG:
-
-/* TODO:
- [x] add styling for header
- [ ] add mobile mixin
- [ ] change header layout to flex row on mobile */
+@include mobile {
+  header {
+    @include mobile-layout;
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../style/main.scss";
+
+.advice-card-contents {
+  @include mobile-layout;
+
+  text-align: center;
+}

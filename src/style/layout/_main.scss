@@ -1,18 +1,6 @@
 main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
+  @include mobile-layout;
+  height: 100%;
+  padding: 20px;
   margin: 0;
 }
-
-// FIXME: cant access mobile mixin inside layout folder
-// @include mobile {
-//   main {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-// }

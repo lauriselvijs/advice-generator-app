@@ -1,5 +1,6 @@
 footer {
-  font-size: 11px;
+  font-size: var(--font-size-small);
   text-align: center;
-  color: hsl(228, 45%, 44%);
+  color: var(--footer-primary-color);
+  padding: 10px;
 }

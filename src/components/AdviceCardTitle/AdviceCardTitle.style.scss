@@ -1,0 +1,8 @@
+@import "../../style/main.scss";
+
+.advice-card-title {
+  color: var(--primary-base-color);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

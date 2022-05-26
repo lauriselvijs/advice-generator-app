@@ -11,11 +11,9 @@ const App = () => {
     <div className="app">
       <HeaderWrapper>
         <DarkModeBtn />
-        <div>Title</div>
       </HeaderWrapper>
       <AdviceWrapper>
         <AdviceCard />
-        <div>Advice Card 2</div>
       </AdviceWrapper>
       <Footer />
     </div>
