@@ -1,5 +1,5 @@
 import axios, { AxiosError } from "axios";
-import { ADVICE_FETCH_URL } from "../constants/AdviceFetch";
+import { ADVICE_FETCH_URL } from "../constants/AdviceFetch.const";
 
 export interface IError {
   errorMsg: string;
