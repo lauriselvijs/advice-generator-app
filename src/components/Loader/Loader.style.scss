@@ -1,25 +1,33 @@
 @import "../../style/main.scss";
 
-.loader {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 32px 0 #fff, -32px 0 #fff;
-  animation: flash 0.5s ease-out infinite alternate;
+.loader-container {
+  padding: 20px;
+
+  .loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-base-color);
+    box-shadow: 32px 0 var(--primary-base-color),
+      -32px 0 var(--primary-base-color);
+    animation: flash 0.5s ease-out infinite alternate;
+  }
 }
 
 @keyframes flash {
   0% {
-    background-color: #fff2;
-    box-shadow: 32px 0 #fff2, -32px 0 #fff;
+    background-color: var(--secondary-dark-color);
+    box-shadow: 32px 0 var(--secondary-dark-color),
+      -32px 0 var(--primary-base-color);
   }
   50% {
-    background-color: #fff;
-    box-shadow: 32px 0 #fff2, -32px 0 #fff2;
+    background-color: var(--primary-base-color);
+    box-shadow: 32px 0 var(--secondary-dark-color),
+      -32px 0 var(--secondary-dark-color);
   }
   100% {
-    background-color: #fff2;
-    box-shadow: 32px 0 #fff, -32px 0 #fff2;
+    background-color: var(--secondary-dark-color);
+    box-shadow: 32px 0 var(--primary-base-color),
+      -32px 0 var(--secondary-dark-color);
   }
 }

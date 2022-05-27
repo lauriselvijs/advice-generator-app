@@ -1,11 +1,13 @@
 import React from "react";
 import "./AdviceGeneratorBtn.style.scss";
 import DiceIcon from "../../asset/image/icon/icon-dice.svg";
-import { fetchAdvice } from "../../services/Advice.service";
+import { useAdviceDataQuery } from "../../query/Advice.query.hook";
 
 const AdviceGeneratorBtn = () => {
-  const onAdviceGeneratorBtn = async () => {
-    const advice = await fetchAdvice();
+  const { refetch } = useAdviceDataQuery();
+
+  const onAdviceGeneratorBtn = () => {
+    refetch();
   };
 
   return (
