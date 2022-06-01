@@ -1,7 +1,7 @@
 import React from "react";
 import "./AdviceGeneratorBtn.style.scss";
 import DiceIcon from "../../asset/image/icon/icon-dice.svg";
-import { useAdviceDataQuery } from "../../query/Advice.query.hook";
+import { useAdviceDataQuery } from "../../query/Advice/Advice.query.hook";
 
 const AdviceGeneratorBtn = () => {
   const { refetch } = useAdviceDataQuery();

@@ -1,13 +1,15 @@
 import React from "react";
-import { useAdviceDataQuery } from "../../query/Advice.query.hook";
-import { QUERY_ERROR, QUERY_LOADING } from "../../query/Setup.query";
+import { useAdviceDataQuery } from "../../query/Advice/Advice.query.hook";
 import Loader from "../Loader";
 import "./AdviceCardContents.style.scss";
 
 const AdviceCardContents = () => {
-  const { data, status } = useAdviceDataQuery();
+  const { data, isLoading, error } = useAdviceDataQuery();
 
-  if (status === QUERY_LOADING) {
+  const { advice } = data?.data.slip || {};
+  const { message: errorMsg } = error || {};
+
+  if (isLoading) {
     return (
       <>
         <Loader />
@@ -15,7 +17,7 @@ const AdviceCardContents = () => {
     );
   }
 
-  return <p className="advice-card-contents">{data}</p>;
+  return <p className="advice-card-contents">{errorMsg ? errorMsg : advice}</p>;
 };
 
 export default AdviceCardContents;
