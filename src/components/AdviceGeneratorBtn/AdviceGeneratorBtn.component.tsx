@@ -11,7 +11,11 @@ const AdviceGeneratorBtn = () => {
   };
 
   return (
-    <button onClick={onAdviceGeneratorBtn} className="advice-generator-btn">
+    <button
+      aria-label="generate advice"
+      onClick={onAdviceGeneratorBtn}
+      className="advice-generator-btn"
+    >
       <img
         src={DiceIcon}
         alt="Dice icon"

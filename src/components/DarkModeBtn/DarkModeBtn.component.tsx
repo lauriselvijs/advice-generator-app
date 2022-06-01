@@ -12,7 +12,7 @@ const DarkModeBtn = () => {
   };
 
   return (
-    <button onClick={onDarkModeBtnClick}>
+    <button aria-label="dark mode" onClick={onDarkModeBtnClick}>
       {theme ? <BsCloudMoonFill /> : <BsCloudSunFill />}
     </button>
   );
