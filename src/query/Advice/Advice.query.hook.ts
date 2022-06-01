@@ -9,5 +9,3 @@ export const useAdviceDataQuery = () =>
     fetchAdvice,
     ADVICE_QUERY_SETTINGS
   );
-
-export default useAdviceDataQuery;
