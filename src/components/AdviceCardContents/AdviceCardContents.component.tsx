@@ -9,6 +9,8 @@ const AdviceCardContents = () => {
   const { advice } = data?.data.slip || {};
   const { message: errorMsg } = error || {};
 
+  console.log(data);
+
   if (isLoading) {
     return (
       <>
