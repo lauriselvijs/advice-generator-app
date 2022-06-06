@@ -4,14 +4,12 @@ import Loader from "../Loader";
 import "./AdviceCardContents.style.scss";
 
 const AdviceCardContents = () => {
-  const { data, isLoading, error } = useAdviceDataQuery();
+  const { data, isLoading, error, isFetching } = useAdviceDataQuery();
 
   const { advice } = data?.data.slip || {};
   const { message: errorMsg } = error || {};
 
-  console.log(data);
-
-  if (isLoading) {
+  if (isLoading || isFetching) {
     return (
       <>
         <Loader />
