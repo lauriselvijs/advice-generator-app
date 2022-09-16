@@ -10,6 +10,9 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
+  - [Installation](#installation)
+    - [Steps to Setup](#steps-to-setup)
+    - [Steps to Run](#steps-to-run)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
@@ -36,6 +39,17 @@ Users should be able to:
 
 - Solution URL: [Github](https://github.com/lauriselvijs/advice-generator-app)
 - Live Site URL: [Netlify](https://1960f7-advice-generator-app.netlify.app/)
+
+## Installation
+
+### Steps to Setup
+
+1. Have node JS installed.
+2. In the project root directory, run <code>npm install</code>
+
+### Steps to Run
+
+1. In the project root directory, run <code>npm run start</code>
 
 ## My process
 
