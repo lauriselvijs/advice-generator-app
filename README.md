@@ -192,5 +192,5 @@ const { data, isLoading, error } = useAdviceDataQuery();
 
 ## Author
 
-- Website - [Lauris](https://portfolio-rouge-seven.vercel.app/)
+- Website - [Lauris](https://b2cf56-portfolio-react.netlify.app/projects)
 - Frontend Mentor - [lauriselvijs](https://www.frontendmentor.io/profile/lauriselvijs)
