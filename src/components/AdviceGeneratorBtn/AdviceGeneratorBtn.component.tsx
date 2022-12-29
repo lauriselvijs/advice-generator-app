@@ -1,10 +1,9 @@
-import React from "react";
 import "./AdviceGeneratorBtn.style.scss";
 import DiceIcon from "../../asset/image/icon/icon-dice.svg";
-import { useAdviceDataQuery } from "../../query/Advice/Advice.query.hook";
+import { useAdviceDataQuery } from "../../hooks/Advice";
 
 const AdviceGeneratorBtn = () => {
-  const { refetch } = useAdviceDataQuery();
+  const { refetch, isFetching } = useAdviceDataQuery();
 
   const onAdviceGeneratorBtn = () => {
     refetch();
@@ -15,6 +14,7 @@ const AdviceGeneratorBtn = () => {
       aria-label="generate advice"
       onClick={onAdviceGeneratorBtn}
       className="advice-generator-btn"
+      disabled={isFetching ? true : false}
     >
       <img
         src={DiceIcon}

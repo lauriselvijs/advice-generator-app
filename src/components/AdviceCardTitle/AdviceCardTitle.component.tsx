@@ -1,17 +1,17 @@
 import React from "react";
 import { ADVICE_TITLE } from "../../constants/Advice.const";
-import { useAdviceDataQuery } from "../../query/Advice/Advice.query.hook";
+import { useAdviceDataQuery } from "../../hooks/Advice";
 import "./AdviceCardTitle.style.scss";
 
 const AdviceCardTitle = () => {
   const { data } = useAdviceDataQuery();
 
-  const { id } = data?.data.slip || {};
+  const { id: adviceNumber } = data?.data.slip || {};
 
   return (
     <h1 className="advice-card-title">
       {ADVICE_TITLE}
-      {id}
+      {adviceNumber}
     </h1>
   );
 };

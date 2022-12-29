@@ -4,12 +4,13 @@ import { QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
 import App from "./components/App";
-import { queryClient } from "./query/Setup.query";
+import { queryClient } from "./config/ReactQuery.config";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>

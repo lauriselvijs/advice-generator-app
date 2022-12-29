@@ -1,5 +1,4 @@
-import React from "react";
-import { useAdviceDataQuery } from "../../query/Advice/Advice.query.hook";
+import { useAdviceDataQuery } from "../../hooks/Advice";
 import Loader from "../Loader";
 import "./AdviceCardContents.style.scss";
 
@@ -10,11 +9,7 @@ const AdviceCardContents = () => {
   const { message: errorMsg } = error || {};
 
   if (isLoading || isFetching) {
-    return (
-      <>
-        <Loader />
-      </>
-    );
+    return <Loader />;
   }
 
   return <p className="advice-card-contents">{errorMsg ? errorMsg : advice}</p>;
