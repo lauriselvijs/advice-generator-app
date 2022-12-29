@@ -1,0 +1,14 @@
+@import "../../style/main.scss";
+
+.adviceCard {
+  @include mobile-layout;
+
+  background-color: var(--secondary-base-color);
+  border-radius: 10px;
+  height: fit-content;
+  max-width: 500px;
+  min-height: 260px;
+  padding: 35px;
+  position: relative;
+  width: 80%;
+}

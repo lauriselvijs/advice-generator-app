@@ -1,5 +1,4 @@
-import "./AdviceGeneratorBtn.style.scss";
-import DiceIcon from "../../asset/image/icon/icon-dice.svg";
+import styles from "./AdviceGeneratorBtn.style.module.scss";
 import { useAdviceDataQuery } from "../../hooks/Advice";
 
 const AdviceGeneratorBtn = () => {
@@ -9,21 +8,15 @@ const AdviceGeneratorBtn = () => {
     refetch();
   };
 
+  const disabled = isFetching ? true : false;
+
   return (
     <button
-      aria-label="generate advice"
+      aria-label="Generate advice"
       onClick={onAdviceGeneratorBtn}
-      className="advice-generator-btn"
-      disabled={isFetching ? true : false}
-    >
-      <img
-        src={DiceIcon}
-        alt="Dice icon"
-        width={24}
-        height={24}
-        className="dice-icon"
-      />
-    </button>
+      className={styles.adviceGeneratorBtn}
+      disabled={disabled}
+    />
   );
 };
 

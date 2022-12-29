@@ -1,3 +1,1 @@
-import AdviceCard from "./AdviceCard.component";
-
-export default AdviceCard;
+export { default } from "./AdviceCard.component";

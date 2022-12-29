@@ -1,0 +1,15 @@
+.adviceGeneratorBtn {
+  background-image: url("./../../asset/image/icon/icon-dice.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  bottom: -30px;
+  height: 68px;
+  width: 68px;
+  position: absolute;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.25;
+  }
+}

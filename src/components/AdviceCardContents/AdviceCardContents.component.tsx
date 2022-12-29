@@ -1,6 +1,6 @@
 import { useAdviceDataQuery } from "../../hooks/Advice";
 import Loader from "../Loader";
-import "./AdviceCardContents.style.scss";
+import styles from "./AdviceCardContents.style.module.scss";
 
 const AdviceCardContents = () => {
   const { data, isLoading, error, isFetching } = useAdviceDataQuery();
@@ -12,7 +12,9 @@ const AdviceCardContents = () => {
     return <Loader />;
   }
 
-  return <p className="advice-card-contents">{errorMsg ? errorMsg : advice}</p>;
+  const renderAdvice = errorMsg ? errorMsg : advice;
+
+  return <p className={styles.adviceCardContents}>{renderAdvice}</p>;
 };
 
 export default AdviceCardContents;

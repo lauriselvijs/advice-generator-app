@@ -38,13 +38,11 @@
 
 body {
   margin: 0;
-  padding: 0px;
-
-  font-family: var(--font-family);
-  font-weight: var(--font-weight);
-  font-size: var(--font-size-large);
-
-  color: var(--primary-light-color);
+  padding: 0;
 
   background-color: var(--secondary-dark-color);
+  color: var(--primary-light-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight);
 }
