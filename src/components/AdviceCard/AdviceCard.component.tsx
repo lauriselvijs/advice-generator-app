@@ -1,4 +1,3 @@
-import React from "react";
 import AdviceCardTitle from "../AdviceCardTitle/";
 import AdviceCardContents from "../AdviceCardContents";
 import "./AdviceCard.style.scss";

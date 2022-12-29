@@ -1,4 +1,3 @@
-import React from "react";
 import themeNames from "../../style/main.scss";
 import { useThemeSwitcher } from "../../hooks/Theme.hook";
 import { BsCloudMoonFill, BsCloudSunFill } from "react-icons/bs";

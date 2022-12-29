@@ -1,4 +1,3 @@
-import React from "react";
 import { ADVICE_TITLE } from "../../constants/Advice.const";
 import { useAdviceDataQuery } from "../../hooks/Advice";
 import "./AdviceCardTitle.style.scss";

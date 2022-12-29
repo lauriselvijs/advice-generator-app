@@ -1,4 +1,3 @@
-import React from "react";
 import AdviceCard from "../AdviceCard";
 import AdviceWrapper from "../AdviceWrapper";
 import DarkModeBtn from "../DarkModeBtn";
