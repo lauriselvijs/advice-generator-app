@@ -1,3 +1,1 @@
-import HeaderWrapper from "./HeaderWrapper.component";
-
-export default HeaderWrapper;
+export { default } from "./HeaderWrapper.component";

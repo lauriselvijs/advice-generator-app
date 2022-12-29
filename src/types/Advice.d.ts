@@ -1,4 +1,4 @@
-interface IAdvice {
+interface Advice {
   slip: {
     id: number;
     advice: string;

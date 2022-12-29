@@ -1,3 +1,1 @@
-import AdviceCardTItle from "./AdviceCardTitle.component";
-
-export default AdviceCardTItle;
+export { default } from "./AdviceCardTitle.component";

@@ -1,3 +1,1 @@
-import AdviceCardDivider from "./AdviceCardDivider.component";
-
-export default AdviceCardDivider;
+export { default } from "./AdviceCardDivider.component";

@@ -1,3 +1,3 @@
-interface IWrapper {
+interface Wrapper {
   children: ReactElement;
 }

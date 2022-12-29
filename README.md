@@ -155,7 +155,7 @@ root.render(
 );
 
 export const useAdviceDataQuery = () =>
-  useQuery<AxiosResponse<IAdvice, any>, AxiosError>(
+  useQuery<AxiosResponse<Advice, any>, AxiosError>(
     ADVICE_KEY,
     fetchAdvice,
     ADVICE_QUERY_SETTINGS
@@ -169,7 +169,7 @@ export const ADVICE_QUERY_SETTINGS = {
 };
 
 export const fetchAdvice = async () => {
-  const data = await axios.get<IAdvice>(ADVICE_FETCH_URL);
+  const data = await axios.get<Advice>(ADVICE_FETCH_URL);
   return data;
 };
 

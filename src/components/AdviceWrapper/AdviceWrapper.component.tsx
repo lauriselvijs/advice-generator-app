@@ -1,4 +1,4 @@
-const AdviceWrapper = ({ children }: IWrapper) => {
+const AdviceWrapper = ({ children }: Wrapper) => {
   return <main>{children}</main>;
 };
 

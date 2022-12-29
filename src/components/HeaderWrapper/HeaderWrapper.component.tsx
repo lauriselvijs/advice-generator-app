@@ -1,4 +1,4 @@
-const HeaderWrapper = ({ children }: IWrapper) => {
+const HeaderWrapper = ({ children }: Wrapper) => {
   return <header>{children}</header>;
 };
 

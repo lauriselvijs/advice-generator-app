@@ -5,9 +5,9 @@
 }
 
 @mixin mobile-layout {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
+  justify-content: center;
 }

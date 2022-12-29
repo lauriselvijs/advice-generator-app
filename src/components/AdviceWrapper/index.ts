@@ -1,3 +1,1 @@
-import AdviceWrapper from "./AdviceWrapper.component";
-
-export default AdviceWrapper;
+export { default } from "./AdviceWrapper.component";
