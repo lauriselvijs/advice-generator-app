@@ -1,3 +1,3 @@
-interface Wrapper {
+export interface Wrapper {
   children: ReactElement;
 }
