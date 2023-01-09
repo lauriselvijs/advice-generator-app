@@ -7,15 +7,13 @@ button {
   font-weight: inherit;
   font-size: inherit;
 
+  &:hover {
+    background-color: var(--secondary-light-color);
+  }
+
   @include mobile {
     &:hover {
       background-color: var(--primary-base-color);
-    }
-  }
-
-  @include mobile-hover {
-    &:hover {
-      background-color: var(--secondary-light-color);
     }
   }
 }
