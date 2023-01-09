@@ -4,6 +4,12 @@
   }
 }
 
+@mixin hover-supported {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
 @mixin mobile-layout {
   align-items: center;
   display: flex;
