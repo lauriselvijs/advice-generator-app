@@ -45,4 +45,12 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-large);
   font-weight: var(--font-weight);
+
+  a {
+  -webkit-tap-highlight-color: transparent;
+  }
+
+  button {
+  -webkit-tap-highlight-color: transparent;
+  }
 }
