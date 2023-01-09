@@ -7,8 +7,14 @@
   border-radius: 10px;
   height: fit-content;
   max-width: 500px;
-  min-height: 260px;
+  min-height: 300px;
   padding: 35px;
   position: relative;
   width: 80%;
+}
+
+@include mobile {
+  .adviceCard {
+    min-height: 400px;
+  }
 }
