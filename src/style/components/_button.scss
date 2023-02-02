@@ -12,4 +12,10 @@ button {
       background-color: var(--secondary-light-color);
     }
   }
+
+  &[disabled] {
+    background-color: var(--primary-base-color);
+    cursor: not-allowed;
+    opacity: 0.25;
+  }
 }
