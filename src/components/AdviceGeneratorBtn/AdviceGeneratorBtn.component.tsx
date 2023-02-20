@@ -1,5 +1,6 @@
-import styles from "./AdviceGeneratorBtn.style.module.scss";
 import { useAdviceDataQuery } from "../../hooks/Advice";
+
+import styles from "./AdviceGeneratorBtn.style.module.scss";
 
 const AdviceGeneratorBtn = () => {
   const { refetch, isFetching } = useAdviceDataQuery();
@@ -8,14 +9,12 @@ const AdviceGeneratorBtn = () => {
     refetch();
   };
 
-  const disabled = isFetching ? true : false;
-
   return (
     <button
       aria-label="Generate advice"
       onClick={onAdviceGeneratorBtn}
       className={styles.adviceGeneratorBtn}
-      disabled={disabled}
+      disabled={isFetching}
     />
   );
 };
