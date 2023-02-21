@@ -1,17 +1,23 @@
-import themeNames from "../../style/main.scss";
-import { useThemeSwitcher } from "../../hooks/Theme.hook";
 import { BsCloudMoonFill, BsCloudSunFill } from "react-icons/bs";
+
+import Theme from "../../style/main.scss";
+import { useTheme } from "../../hooks/Theme";
+
 import styles from "./DarkModeBtn.style.module.scss";
 
 const DarkModeBtn = () => {
-  const { lightTheme } = themeNames;
-  const [theme, setTheme] = useThemeSwitcher(lightTheme);
+  const { light } = Theme;
+  const { currentTheme, setTheme, setDefaultTheme } = useTheme();
 
   const onDarkModeBtnClick = () => {
-    setTheme(!theme);
+    currentTheme === light ? setDefaultTheme() : setTheme(light);
   };
 
-  const darkModeBtnIcon = theme ? <BsCloudMoonFill /> : <BsCloudSunFill />;
+  const darkModeBtnIcon = currentTheme ? (
+    <BsCloudMoonFill aria-hidden="true" />
+  ) : (
+    <BsCloudSunFill aria-hidden="true" />
+  );
 
   return (
     <button

@@ -1,20 +1,21 @@
 import AdviceCard from "../AdviceCard";
-import AdviceWrapper from "../AdviceWrapper";
+import Author from "../Author";
 import DarkModeBtn from "../DarkModeBtn";
-import Footer from "../Footer";
-import HeaderWrapper from "../HeaderWrapper";
+
 import styles from "./App.style.module.scss";
 
 const App = () => {
   return (
     <div className={styles.app}>
-      <HeaderWrapper>
+      <header>
         <DarkModeBtn />
-      </HeaderWrapper>
-      <AdviceWrapper>
+      </header>
+      <main>
         <AdviceCard />
-      </AdviceWrapper>
-      <Footer />
+      </main>
+      <footer>
+        <Author />
+      </footer>
     </div>
   );
 };

@@ -1,18 +1,29 @@
+import { useMemo } from "react";
+import { PulseLoader } from "react-spinners";
+
 import { useAdviceDataQuery } from "../../hooks/Advice";
-import Loader from "../Loader";
+
 import styles from "./AdviceCardContents.style.module.scss";
 
 const AdviceCardContents = () => {
-  const { data, isLoading, error, isFetching } = useAdviceDataQuery();
+  const {
+    data: { slip: { advice } } = { slip: {} },
+    isLoading,
+    isError,
+    error,
+    isFetching,
+  } = useAdviceDataQuery();
 
-  const { advice } = data?.data.slip || {};
   const { message: errorMsg } = error || {};
 
-  if (isLoading || isFetching) {
-    return <Loader />;
-  }
+  const renderAdvice = useMemo(
+    () => (errorMsg ? errorMsg : advice),
+    [errorMsg, advice]
+  );
 
-  const renderAdvice = errorMsg ? errorMsg : advice;
+  if (isLoading || isFetching) {
+    return <PulseLoader />;
+  }
 
   return <p className={styles.adviceCardContents}>{renderAdvice}</p>;
 };

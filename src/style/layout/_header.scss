@@ -1,12 +1,12 @@
+@use "../utils/media";
+
 header {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
-}
 
-@include mobile {
-  header {
-    @include mobile-layout;
+  @include media.mobile {
+    @include media.mobile-layout;
   }
 }

@@ -5,11 +5,11 @@ declare module "*.svg" {
   export default value;
 }
 
-interface ITheme {
+interface Style {
   [key: string]: string;
 }
 
 declare module "*.scss" {
-  const value: ITheme;
+  const value: Style;
   export default value;
 }

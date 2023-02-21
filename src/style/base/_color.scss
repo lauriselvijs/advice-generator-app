@@ -1,0 +1,25 @@
+$primary-light: hsl(193, 38%, 86%);
+$primary: hsl(150, 100%, 66%);
+$secondary: hsl(217, 19%, 24%);
+$secondary-dark: hsl(218, 23%, 16%);
+$secondary-light: hsl(217, 19%, 38%);
+$footer-primary: hsl(228, 45%, 44%);
+
+:root {
+  --color-primary: var(--imported-color-primary, #{$primary});
+  --color-primary-light: var(--imported-color-primary-light, #{$primary-light});
+  --color-secondary: var(--imported-color-secondary, #{$secondary});
+  --color-secondary-light: var(
+    --imported-color-secondary-light,
+    #{$secondary-light}
+  );
+  --color-secondary-dark: var(
+    --imported-color-secondary-dark,
+    #{$secondary-dark}
+  );
+
+  --color-footer-primary: var(
+    --imported--color-footer-primary,
+    #{$footer-primary}
+  );
+}

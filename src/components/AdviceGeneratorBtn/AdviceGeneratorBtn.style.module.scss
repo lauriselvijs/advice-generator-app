@@ -1,10 +1,14 @@
+@use "../../style/components/button";
+
 .adviceGeneratorBtn {
-  background-image: url("./../../asset/image/icon/icon-dice.svg");
+  @include button.primary;
+
+  background-image: url("./../../asset/icons/icon-dice.svg");
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
   bottom: -30px;
   height: 68px;
-  width: 68px;
   position: absolute;
+  width: 68px;
 }

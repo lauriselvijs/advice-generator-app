@@ -1,7 +1,5 @@
-@import "../../style/main.scss";
+@use "../../style/utils/media";
 
 .adviceCardContents {
-  @include mobile-layout;
-
-  text-align: center;
+  @include media.mobile-layout;
 }

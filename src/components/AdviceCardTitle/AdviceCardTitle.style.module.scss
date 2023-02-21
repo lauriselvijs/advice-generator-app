@@ -1,6 +1,8 @@
+@use "../../style/base/font";
+
 .adviceCardTitle {
-  color: var(--primary-base-color);
-  font-size: var(--font-size-small);
+  color: var(--color-primary);
+  font-size: font.$size-small;
   letter-spacing: 4px;
   text-transform: uppercase;
 }

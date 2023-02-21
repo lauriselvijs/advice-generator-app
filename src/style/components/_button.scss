@@ -1,21 +1,39 @@
+@use "../base/font";
+@use "../utils/media";
+
+:root {
+  --button-bg-color: var(--color-primary);
+  --button-hover-bg-color: var(--color-secondary-light);
+  --button-text-color: var(--color-secondary);
+  --button-font-family: #{font.$family};
+  --button-font-weight: #{font.$weight-extra-bold};
+  --button-font-size: #{font.$size-large};
+  --button-line-height: #{font.$line-height};
+}
+
 button {
-  background-color: var(--primary-base-color);
-  color: var(--secondary-base-color);
+  -webkit-tap-highlight-color: transparent;
+}
+
+@mixin primary {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   border: none;
   cursor: pointer;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  padding: 12px 24px;
 
-  @include hover-supported {
-    &:hover {
-      background-color: var(--secondary-light-color);
+  &:not([disabled]) {
+    @include media.hover {
+      background-color: var(--button-hover-bg-color);
     }
   }
 
   &[disabled] {
-    background-color: var(--primary-base-color);
     cursor: not-allowed;
-    opacity: 0.25;
+    opacity: 0.2;
   }
 }

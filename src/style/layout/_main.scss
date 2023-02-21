@@ -1,5 +1,7 @@
+@use "../utils/media";
+
 main {
-  @include mobile-layout;
+  @include media.mobile-layout;
 
   margin: 0;
   padding: 0;

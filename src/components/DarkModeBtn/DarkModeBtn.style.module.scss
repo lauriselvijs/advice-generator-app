@@ -1,4 +1,8 @@
+@use "../../style/components/button";
+
 .darkModeBtn {
+  @include button.primary;
+
   border-radius: 20px;
   padding: 4px 48px;
 }

@@ -1,9 +1,9 @@
-@import "../../style/main.scss";
+@use "../../style/utils/media";
 
 .adviceCard {
-  @include mobile-layout;
+  @include media.mobile-layout;
 
-  background-color: var(--secondary-base-color);
+  background-color: var(--color-secondary);
   border-radius: 10px;
   height: fit-content;
   max-width: 500px;
@@ -11,10 +11,8 @@
   padding: 35px;
   position: relative;
   width: 80%;
-}
 
-@include mobile {
-  .adviceCard {
+  @include media.mobile {
     min-height: 400px;
   }
 }
