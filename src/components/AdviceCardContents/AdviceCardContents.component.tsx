@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { PulseLoader } from "react-spinners";
+import { ThreeDots } from "react-loader-spinner";
 
 import { useAdviceDataQuery } from "../../hooks/Advice";
 
@@ -9,12 +9,11 @@ const AdviceCardContents = () => {
   const {
     data: { slip: { advice } } = { slip: {} },
     isLoading,
-    isError,
     error,
     isFetching,
   } = useAdviceDataQuery();
 
-  const { message: errorMsg } = error || {};
+  const { message: errorMsg } = error ?? {};
 
   const renderAdvice = useMemo(
     () => (errorMsg ? errorMsg : advice),
@@ -22,7 +21,7 @@ const AdviceCardContents = () => {
   );
 
   if (isLoading || isFetching) {
-    return <PulseLoader />;
+    return <ThreeDots color="var(--color-primary)" />;
   }
 
   return <p className={styles.adviceCardContents}>{renderAdvice}</p>;
