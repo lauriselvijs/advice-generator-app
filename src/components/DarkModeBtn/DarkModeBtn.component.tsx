@@ -13,10 +13,14 @@ const DarkModeBtn = () => {
     currentTheme === light ? setDefaultTheme() : setTheme(light);
   };
 
-  const darkModeBtnIcon = currentTheme ? (
-    <BsCloudMoonFill aria-hidden="true" />
-  ) : (
-    <BsCloudSunFill aria-hidden="true" />
+  const darkModeBtnIcon = useMemo(
+    () =>
+      currentTheme ? (
+        <BsFillMoonFill aria-hidden="true" />
+      ) : (
+        <BsFillSunFill aria-hidden="true" />
+      ),
+    [currentTheme]
   );
 
   return (
