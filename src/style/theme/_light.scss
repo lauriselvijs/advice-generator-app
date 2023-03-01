@@ -9,28 +9,28 @@ $primary-light: hsl(195 83% 5%);
 
 .#{$theme-name} {
   --color-primary: var(
-    --imported--#{$theme-name}-theme-color-primary,
+    --imported-#{$theme-name}-theme-color-primary,
     #{$primary}
   );
   --color-primary-light: var(
-    --imported--#{$theme-name}-theme-color-primary-light,
+    --imported-#{$theme-name}-theme-color-primary-light,
     #{$primary-light}
   );
   --color-secondary: var(
-    --imported--#{$theme-name}-theme-color-secondary,
+    --imported-#{$theme-name}-theme-color-secondary,
     #{$secondary}
   );
   --color-secondary-light: var(
-    --imported--#{$theme-name}-theme-color-secondary-light,
+    --imported-#{$theme-name}-theme-color-secondary-light,
     #{$secondary-light}
   );
   --color-secondary-dark: var(
-    --imported--#{$theme-name}-theme-color-secondary-dark,
+    --imported-#{$theme-name}-theme-color-secondary-dark,
     #{$secondary-dark}
   );
 
   --color-footer-primary: var(
-    --imported--#{$theme-name}-theme--color-footer-primary,
+    --imported-#{$theme-name}-theme--color-footer-primary,
     #{$footer-primary}
   );
 }
