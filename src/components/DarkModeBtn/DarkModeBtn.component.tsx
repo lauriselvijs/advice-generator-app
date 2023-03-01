@@ -13,7 +13,7 @@ const DarkModeBtn = () => {
     currentTheme === light ? setDefaultTheme() : setTheme(light);
   };
 
-  const darkModeBtnIcon = useMemo(
+  const icon = useMemo(
     () =>
       currentTheme ? (
         <BsFillMoonFill aria-hidden="true" />
@@ -29,7 +29,7 @@ const DarkModeBtn = () => {
       aria-label="Dark mode"
       onClick={onDarkModeBtnClick}
     >
-      {darkModeBtnIcon}
+      {icon}
     </button>
   );
 };
