@@ -1,30 +1,16 @@
-import { useMemo } from "react";
 import { ThreeDots } from "react-loader-spinner";
 
-import { useAdviceDataQuery } from "../../hooks/Advice";
-
 import styles from "./AdviceCardContents.style.module.scss";
+import useAdviceCardContents from "./AdviceCardContents.hook";
 
 const AdviceCardContents = () => {
-  const {
-    data: { slip: { advice } } = { slip: {} },
-    isLoading,
-    error,
-    isFetching,
-  } = useAdviceDataQuery();
+  const { isFetching, advice } = useAdviceCardContents();
 
-  const { message: errorMsg } = error ?? {};
-
-  const renderAdvice = useMemo(
-    () => (errorMsg ? errorMsg : advice),
-    [errorMsg, advice]
-  );
-
-  if (isLoading || isFetching) {
+  if (isFetching) {
     return <ThreeDots color="var(--color-primary)" />;
   }
 
-  return <p className={styles.adviceCardContents}>{renderAdvice}</p>;
+  return <p className={styles.adviceCardContents}>{advice}</p>;
 };
 
 export default AdviceCardContents;

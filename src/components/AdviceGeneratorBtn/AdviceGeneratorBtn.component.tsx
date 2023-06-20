@@ -1,20 +1,15 @@
-import { useAdviceDataQuery } from "../../hooks/Advice";
-
-import styles from "./AdviceGeneratorBtn.style.module.scss";
+import styles from "./AdviceGeneratorBtn.module.scss";
+import useAdviceGeneratorBtn from "./AdviceGeneratorBtn.hook";
 
 const AdviceGeneratorBtn = () => {
-  const { refetch, isFetching } = useAdviceDataQuery();
-
-  const onAdviceGeneratorBtn = () => {
-    refetch();
-  };
+  const { onClick, isDebounced } = useAdviceGeneratorBtn();
 
   return (
     <button
       aria-label="Generate advice"
-      onClick={onAdviceGeneratorBtn}
+      onClick={onClick}
       className={styles.adviceGeneratorBtn}
-      disabled={isFetching}
+      disabled={isDebounced}
     />
   );
 };

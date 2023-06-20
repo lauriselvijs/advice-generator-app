@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { BsCloudMoonFill, BsCloudSunFill } from "react-icons/bs";
 
 import Theme from "../../style/main.scss";
@@ -16,9 +17,9 @@ const DarkModeBtn = () => {
   const icon = useMemo(
     () =>
       currentTheme ? (
-        <BsFillMoonFill aria-hidden="true" />
+        <BsCloudMoonFill aria-hidden="true" />
       ) : (
-        <BsFillSunFill aria-hidden="true" />
+        <BsCloudSunFill aria-hidden="true" />
       ),
     [currentTheme]
   );

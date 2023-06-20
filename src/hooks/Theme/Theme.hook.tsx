@@ -24,7 +24,7 @@ export const useTheme = () => {
       setValue(light);
       document.documentElement.className = light;
     }
-  }, []);
+  }, [prefersLightMode, setValue, value]);
 
   const setTheme = (themeName: string): void => {
     if (themeName !== value && themeName) {
