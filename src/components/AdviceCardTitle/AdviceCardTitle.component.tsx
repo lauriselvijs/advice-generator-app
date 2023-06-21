@@ -1,5 +1,6 @@
-import { ADVICE_TITLE } from "./AdviceCardTitle.config";
 import { useAdviceDataQuery } from "../../hooks/Advice";
+
+import { ADVICE_TITLE } from "./AdviceCardTitle.config";
 import styles from "./AdviceCardTitle.module.scss";
 
 const AdviceCardTitle = () => {
