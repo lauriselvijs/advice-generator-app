@@ -19,7 +19,8 @@
     "react-scripts": "5.0.1",
     "react-use": "^17.4.0",
     "sass": "^1.52.1",
-    "typescript": "^4"
+    "typescript": "^4",
+    "typewriter-effect": "^2.20.1"
   },
   "scripts": {
     "start": "react-scripts start",

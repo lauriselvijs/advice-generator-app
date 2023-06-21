@@ -1,4 +1,5 @@
 import { ThreeDots } from "react-loader-spinner";
+import Typewriter from "typewriter-effect";
 
 import styles from "./AdviceCardContents.style.module.scss";
 import useAdviceCardContents from "./AdviceCardContents.hook";
@@ -10,7 +11,18 @@ const AdviceCardContents = () => {
     return <ThreeDots color="var(--color-primary)" />;
   }
 
-  return <p className={styles.adviceCardContents}>{advice}</p>;
+  return (
+    <Typewriter
+      options={{
+        wrapperClassName: styles.adviceCardContents,
+        strings: [advice],
+        autoStart: true,
+        loop: false,
+        cursor: "",
+        deleteSpeed: Infinity,
+      }}
+    />
+  );
 };
 
 export default AdviceCardContents;
