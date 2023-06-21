@@ -18,9 +18,7 @@ export const useTheme = () => {
   useLayoutEffect(() => {
     if (value) {
       document.documentElement.className = value;
-    }
-
-    if (prefersLightMode) {
+    } else if (prefersLightMode) {
       setValue(light);
       document.documentElement.className = light;
     }
