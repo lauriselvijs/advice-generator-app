@@ -1,6 +1,6 @@
 import AdviceCardTitle from "../AdviceCardTitle/";
 import AdviceCardContents from "../AdviceCardContents";
-import styled from "./AdviceCard.style.module.scss";
+import styled from "./AdviceCard.module.scss";
 import AdviceGeneratorBtn from "../AdviceGeneratorBtn";
 import AdviceCardDivider from "../AdviceCardDivider";
 

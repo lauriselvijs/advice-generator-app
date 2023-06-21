@@ -2,7 +2,7 @@ import AdviceCard from "../AdviceCard";
 import Author from "../Author";
 import DarkModeBtn from "../DarkModeBtn";
 
-import styles from "./App.style.module.scss";
+import styles from "./App.module.scss";
 
 const App = () => {
   return (

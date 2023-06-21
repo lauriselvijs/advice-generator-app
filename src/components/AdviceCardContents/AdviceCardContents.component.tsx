@@ -1,7 +1,7 @@
 import { ThreeDots } from "react-loader-spinner";
 import Typewriter from "typewriter-effect";
 
-import styles from "./AdviceCardContents.style.module.scss";
+import styles from "./AdviceCardContents.module.scss";
 import useAdviceCardContents from "./AdviceCardContents.hook";
 
 const AdviceCardContents = () => {

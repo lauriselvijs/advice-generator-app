@@ -1,6 +1,6 @@
 import { ADVICE_TITLE } from "./AdviceCardTitle.config";
 import { useAdviceDataQuery } from "../../hooks/Advice";
-import styles from "./AdviceCardTitle.style.module.scss";
+import styles from "./AdviceCardTitle.module.scss";
 
 const AdviceCardTitle = () => {
   const { data: { slip: { id: adviceNumber } } = { slip: {} } } =

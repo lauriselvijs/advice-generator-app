@@ -4,7 +4,7 @@ import { BsCloudMoonFill, BsCloudSunFill } from "react-icons/bs";
 import Theme from "../../style/main.scss";
 import { useTheme } from "../../hooks/Theme";
 
-import styles from "./DarkModeBtn.style.module.scss";
+import styles from "./DarkModeBtn.module.scss";
 
 const DarkModeBtn = () => {
   const { light } = Theme;
